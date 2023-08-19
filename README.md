@@ -74,6 +74,7 @@ Ramificação do projeto, utilizada para testar novos recursos no seu código, b
 |------|--------|
 |`git branch -M main`| Força renomeação de master p/ main|
 |`git branch`|Lista as branches do repositório|
+|`git checkout (nome branch)`|Acessa a branch selecionada|
 |`git branch -d (nome)`|Deleta branch selecionada|
 |`git checkout -b (nome branch)` | Cria/Troca para branch selecionada |
 |`git branch -v`| Lista o último commit de cada branch|
