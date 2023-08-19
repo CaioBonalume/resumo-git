@@ -25,12 +25,11 @@ Repositório para armazenar atalhos e anotações sobre Git e GitHub.
 |`git init` | Cria um repositório |
 |`git status` | Mostra arvore de trabalho/index |
 |`git log` | Mostra os logs dos commits realizados |
-|`git clone` | Clona repositório Git p/ um novo |
-|`git restore (nome)` | Restaura arquivo que esta no remoto |
+|`git clone (URL)` | Clona repositório Git p/ um novo |
+|`git clone (URL) --branch (nome branch) --single-branch`|Clona branch|
 |`git pull` | Busca alterações no repo remoto p/ atualizar o local |
 |`git push` | Força as alterações do repo local p/ o remoto |
 |`git push -u origin main` | Envia alterações p/ repositório remoto // -u é abreviação p/ setupstream |
-|`git branch -M main`| Força renomeação de master p/ main|
 
 ### ➕Add
 | Comandos | Função |
@@ -65,6 +64,7 @@ Repositório para armazenar atalhos e anotações sobre Git e GitHub.
 ### ↩️Resotore
 | Comandos | Função |
 |------|--------|
+|`git restore (nome)` | Restaura arquivo que esta no remoto |
 |`git restore --staged (nome)`||
 
 ### 🪢Branch
@@ -72,18 +72,26 @@ Ramificação do projeto, utilizada para testar novos recursos no seu código, b
 
 | Comandos | Função |
 |------|--------|
+|`git branch -M main`| Força renomeação de master p/ main|
 |`git branch`|Lista as branches do repositório|
 |`git branch -d (nome)`|Deleta branch selecionada|
 |`git checkout -b (nome branch)` | Cria/Troca para branch selecionada |
 |`git branch -v`| Lista o último commit de cada branch|
 |`git merge (nome da branch)`| Mescla a branch selecionada a main|
+|`git diff (branch1) (branch2)`|Retorna arquivos que estão diferentes|
+|`git merge (branch)`|Mescla uma branch a main|
 
 ### Extras
-```
-• rm -rf .git - Força remoção do git
-• touch .gitkeep - Força o git a reconhecer um diretório vazio
-• git branch -M main - Força renomeação de master p/ main
-```
+| Comandos | Função |
+|------|--------|
+|`git fetch`|Baixa alterações mas ainda não quer mesclar|
+|`rm -rf .git`|Força remoção do git|
+|`touch .gitkeep`|Força o git a reconhecer um diretório vazio|
+|`git stash`|Arquiva modificações|
+|`git stash list`|Lista modificações arquivadas|
+|`git stash pop`|Traz as modificações e exclui a alteração mais recente|
+|`git stash apply`|Mantem a modificação na lista p/ uso posterior|
+
 
 ## Autores
 
