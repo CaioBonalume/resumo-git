@@ -82,6 +82,17 @@ Ramificação do projeto, utilizada para testar novos recursos no seu código, b
 |`git diff (branch1) (branch2)`|Retorna arquivos que estão diferentes|
 |`git merge (branch)`|Mescla uma branch a main|
 
+### Tabela de Nomenclaturas de Versão e Estágios de Desenvolvimento
+| Nomenclatura Padrão | Outras Variações Comuns | Uso Principal | Quando Usar | Versionamento Após a Nomenclatura?
+|-----|-----|-----|-----|-----|
+|Pré-alpha|`pre-alpha, milestone`|Fase inicial de desenvolvimento, conceitos ou protótipos muito instáveis.|Quando o desenvolvimento está apenas começando, funcionalidades básicas não estão prontas, e há grande instabilidade. Apenas para devs.|`0.0.1-pre-alpha.1`|
+|Alpha|`alpha, a`|Primeira fase de testes internos ou com um grupo muito restrito de usuários.|Quando as funcionalidades básicas estão implementadas, mas há muitos bugs e funcionalidades incompletas. Foco em encontrar bugs.|`0.1.0-alpha.1`|
+|Beta|`beta,b`|Segunda fase de testes com um público maior, focado em usabilidade e feedback.|Quando a maioria das funcionalidades está implementada e testada, mas ainda pode haver bugs e pequenos ajustes de UI/UX.|`0.5.0-beta.1`|
+|Release Candidate|`RC, rc`|Versão quase final, com potencial de ser a versão de lançamento se não houver bugs críticos.|Quando o software está funcionalmente completo e estável, mas precisa de um último ciclo de testes para garantir a qualidade final.|`1.0.0-rc.1`|
+|Release (GA)|`GA`|Versão final e estável, disponível para o público em geral.|Quando o software passou por todas as fases de teste e está pronto para uso em produção.|`1.0.0`|
+|Patch|`fix`|Pequenas correções de bugs, segurança ou melhorias sem novas funcionalidades.|Após o lançamento de uma versão estável, para corrigir problemas encontrados em produção.|`1.0.1`|
+|Major/Minor|`update, feature`|Novas funcionalidades significativas ou pequenas (respectivamente), quebram ou não compatibilidade.|Para lançamentos de novas funcionalidades ou grandes mudanças no software.|`1.1.0`
+
 ### Extras
 | Comandos | Função |
 |------|--------|
